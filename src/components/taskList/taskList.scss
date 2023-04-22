@@ -1,0 +1,46 @@
+@import '../../style/variables.scss';
+
+.add_task {
+    margin: 0px 0 40px auto;
+}
+
+.task_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 1rem;
+    margin: 20px 0;
+    background-color: $figure-color;
+
+
+    &_title {
+        text-align: center;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &_status {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-bottom: 30px;
+        width: 30%;
+        
+    }
+}
+.done .task_title {
+    text-decoration: line-through;
+}
+
+@media(max-width: 968px) {
+    .task_wrapper {
+        
+        flex-direction: column;
+        &_status {
+            margin-bottom: 40px;
+            width: 100%;
+        }
+    }
+
+}

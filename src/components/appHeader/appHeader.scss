@@ -1,0 +1,87 @@
+@import '../../style/variables.scss';
+
+header {
+    box-shadow: $shadow;
+    background-color: $head-color;
+    color: black;
+}
+
+.header_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+
+}
+
+.app {
+    &_menu {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;                    
+            text-transform: uppercase;
+            color: $font-color;
+            li {
+                margin: 0 1rem;
+            }
+            li:hover {
+                color: #F2545B;
+            }
+        }
+    }
+}
+
+a{
+    color: $font-color;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F2545B;
+}
+
+
+@media(max-width: 767px) {
+
+    .header_wrapper {
+        flex-direction: column;
+        align-items: start;
+        padding: 0 1rem;
+    
+    }
+
+    .app {
+
+        &_menu {
+            align-self: flex-end;
+            ul {
+                font-size: 1rem;                    
+            }
+        }
+    }
+}
+
+@media(max-width: 360px) {
+
+    .header_wrapper {
+        padding: 0;
+    
+    }
+    .app {
+
+        &_menu {
+            ul {
+                font-size: 0.75rem;                    
+                li {
+                    margin: 0 0.75rem;
+                }
+            }
+        }
+    }
+
+}

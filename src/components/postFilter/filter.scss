@@ -1,0 +1,49 @@
+@import '../../style/variables.scss';
+
+.search_sort {
+    
+    width: 50%;
+}
+
+.filter {
+    margin: 0px 20px 0px auto;
+}
+
+.btn_filter{
+    display: block;
+    margin:  20px 20px 20px auto;
+    width: 180px;
+    height: 40px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 0.625rem;
+    color: $font-color;
+    outline: none;
+}
+
+.controls {
+    display: flex;
+    label {
+        margin-left: auto;
+    }
+    input[type="date"] { 
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    .controls {
+        label {
+            display: none;
+        }
+
+    }
+
+}
+

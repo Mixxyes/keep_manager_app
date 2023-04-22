@@ -1,0 +1,37 @@
+@import '../../../style/variables.scss';
+
+.custom_input {
+    display: block;
+    margin: 20px auto 20px 20px;
+    max-width: 220px;
+    width: 80%;
+    height: 40px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 0.625rem;
+    font-size: 1.2rem;
+    color: $font-color;
+    text-align: left;
+    padding: 0 20px;
+    outline: none;
+}
+
+.label_wrapper {
+    text-align: center;
+    font-weight: 300;
+}
+
+@media(max-width: 360px) {
+
+    .custom_input {
+        width: 180px;
+        // height: 30px;
+        font-size: 0.8rem;
+    }
+}
+

@@ -1,0 +1,15 @@
+.project_item-enter {
+    opacity: 0;
+  }
+  .project_item-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+  }
+  .project_item-exit {
+    opacity: 1;
+  }
+  .project_item-exit-active {
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
+  }
+  

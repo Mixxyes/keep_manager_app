@@ -1,0 +1,122 @@
+@import '../../style/variables.scss';
+
+.task {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 1rem;
+    margin: 10px 0;
+
+
+    background-color: $figure-color;
+    border-radius: 20px;
+
+    border: 1px gray dashed;
+    cursor: grab;
+
+    // &_header {
+    //     width: 100%;
+    // }
+
+    &_priority {
+        vertical-align: super;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: 400;
+        // color: rgb(255, 114, 71);
+        // color: rgb(65, 206, 65);
+        margin: 0 auto 0 0;
+
+    }
+
+    &_description {
+        margin-bottom: 20px;
+        // font-size: 1.2rem;
+    }
+
+    &_title {
+        // font-weight: 400;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    &_controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &_time {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 0.9rem;
+        div {
+            width: 30%;
+        }
+        &_lifetime {
+            span:last-child {
+                display: block;
+            }
+        }
+    }
+    &_change {
+        height:1.5rem;
+        width: 120px;
+        border: 2px $font-color solid;
+        margin-right: 15px;
+        &:hover{
+            background-color: #E2F3EB;
+        }
+    }
+    &_delete {
+        
+        display: flex;
+        align-items:center;
+        font-size: 1.5rem;
+        cursor: pointer;
+        
+    }
+    &_modify_icon {
+        
+        display: flex;
+        align-items:center;
+        font-size: 1.3rem;
+        cursor: pointer;
+
+        margin-right: 10px;
+    }
+    &_status {
+        display: flex;
+        align-items:center;
+        font-size: 1.3rem;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+}
+
+@media(max-width: 1024px) {
+    .task_time {
+        flex-direction: column;
+        div {
+            position: relative;
+            width: 100%;
+            margin-bottom: 10px;
+            :last-child {
+                position: absolute;
+                right: 0;
+            }
+        }
+        &_lifetime {
+            span:last-child {
+                display: inline;
+            }
+        }
+
+    }
+}

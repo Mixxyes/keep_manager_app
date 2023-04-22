@@ -1,0 +1,55 @@
+@import '../../style/variables.scss';
+
+.project {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin: 20px auto;
+    background-color: $figure-color;
+    border-radius: 1.2rem;
+    border: 1px gray dashed;
+
+    &_tasks_quality {
+        width: fit-content;
+        height: 2rem;
+        padding: 4px 20px 4px 20px;
+        border-radius: 5px;
+        background-color: $add-color;
+        &:hover{
+            background-color: #E2F3EB;
+            color: $font-color;
+        }
+    }
+    &_title {
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &_controls {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &_delete, &_change {
+        display: flex;
+        align-items:center;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    &_change {
+        font-size: 1.8rem;
+        margin-right: 5px;
+    }
+    &_desription {
+        margin-bottom: 20px;
+        padding: 0 20px 0 20px;
+    }
+
+}

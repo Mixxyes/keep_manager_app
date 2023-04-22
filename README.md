@@ -39,7 +39,7 @@ The main topics of study in the project is React, React hooks, Redux.
 
 ## Links
 
-- Live Site URL: [Keep manager app](https://keep_manager.vercel.app/)
+- Live Site URL: [Keep manager app](https://keep-manager-app.vercel.app/)
 
 ## Built with
 
